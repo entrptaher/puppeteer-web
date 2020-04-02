@@ -1,13 +1,13 @@
 {
   "name": "puppeteer-web",
-  "version": "0.0.1",
+  "version": "2.1.1",
   "license": "MIT",
   "browser": "lib/index.js",
   "scripts": {
     "build": "node src/index.js"
   },
   "dependencies": {
-    "puppeteer-core": "^2.1.1"
+    "puppeteer-core": "2.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
