@@ -1,4 +1,4 @@
-import puppeteer from './lib';
+import puppeteer from '../lib';
 
 (async serverAddr => {
   const browser = await puppeteer.connect({
