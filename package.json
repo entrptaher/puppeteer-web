@@ -1,0 +1,26 @@
+{
+  "name": "puppeteer-web",
+  "version": "0.0.1",
+  "license": "MIT",
+  "browser": "lib/index.js",
+  "scripts": {
+    "build": "node src/index.js"
+  },
+  "dependencies": {
+    "puppeteer-core": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "aliasify": "^2.1.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.1",
+    "regenerator-runtime": "^0.13.5"
+  },
+  "browserslist": [
+    "last 2 Chrome version"
+  ],
+  "files": [
+    "lib/*.*"
+  ]
+}
