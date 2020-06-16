@@ -7,6 +7,7 @@ browserify({
 })
   .transform("aliasify", {
     aliases: {
+      util: __dirname + "/util.js",
       ws: __dirname + "/ws.js"
     }
   })
