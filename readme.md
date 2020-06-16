@@ -5,6 +5,7 @@ puppeteer-web bundle created using browserify
 - The bundlers fails to bundle puppeteer, and downloading puppeteer repo just to build puppeteer-web version seems like a hassle for quick development.
 - Puppeteer team removed puppeteer-web from their repo in [this PR](https://github.com/puppeteer/puppeteer/pull/5750)
 - The previous puppeteer could be found here on [this commit](https://github.com/puppeteer/puppeteer/tree/6522e4f524bdbc1f1b9d040772acf862517ed507/utils/browser), but it's a pain to build that as well.
+- Lots of questions in stackoverflow [like this](https://stackoverflow.com/a/54654516/6161265) shows the demand of such library.
 
 ## Usage
 ```
