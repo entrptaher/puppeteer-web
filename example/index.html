@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script src="example.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/puppeteer-web@0.0.2/lib/index.js"></script>
+    <script>
+      (async (serverAddr) => {
+        const browser = await puppeteer.connect({
+          browserWSEndpoint: `ws://${serverAddr}`,
+          ignoreHTTPSErrors: true,
+        });
+        const pagesCount = (await browser.pages()).length;
+        const browserWSEndpoint = await browser.wsEndpoint();
+        console.log({ browserWSEndpoint, pagesCount });
+      })(`0.0.0.0:8080`);
+    </script>
+  </body>
 </html>

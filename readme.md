@@ -1,9 +1,12 @@
 puppeteer-web bundle created using browserify
 
-# Why?
-The bundlers fails to bundle puppeteer, and downloading puppeteer repo just to build puppeteer-web version seems like a hassle for quick development.
+## Why?
 
-# Usage
+- The bundlers fails to bundle puppeteer, and downloading puppeteer repo just to build puppeteer-web version seems like a hassle for quick development.
+- Puppeteer team removed puppeteer-web from their repo in [this PR](https://github.com/puppeteer/puppeteer/pull/5750)
+- The previous puppeteer could be found here on [this commit](https://github.com/puppeteer/puppeteer/tree/6522e4f524bdbc1f1b9d040772acf862517ed507/utils/browser), but it's a pain to build that as well.
+
+## Usage
 ```
 yarn add puppeteer-web
 ```
@@ -24,3 +27,9 @@ async function run(){
 
 }
 ```
+
+## Roadmap
+
+- [ ] Auto build new minorversion on new puppeteer-core release
+- [ ] Update document about pitfall
+- [ ] Add server and client example along with a explanation post
