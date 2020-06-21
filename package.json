@@ -1,7 +1,10 @@
 {
   "name": "puppeteer-web",
   "version": "0.0.2",
+  "repository": "https://github.com/entrptaher/puppeteer-web",
   "license": "MIT",
+  "author": "Md Abu Taher <entrptaher@gmail.com>",
+  "main": "index.js",
   "browser": "lib/index.js",
   "files": [
     "lib/*.*"
